@@ -1,216 +1,219 @@
 <html>
-  <head>
+
+<head>
     <title>Car Listings</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/static/style.css">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  </head>
-  <body>
-        
-    <header>
-      <h1>Car Listings</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Cars</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container">   
-      <section id="search">
-        <h2>Find Your Dream Car</h2>
-        <form>
-          <input type="text" placeholder="Make">
-          <input type="text" placeholder="Model">
-          <input type="text" placeholder="Year">
-          <button type="submit">Search</button>
-        </form>
-      </section>
-            
-      <section id="featured">
-        <h2>Featured Cars</h2>
-        <div class="car">
-          <img src="https://www.carscoops.com/wp-content/uploads/2020/07/Honda-Civic-Type-R-7-1024x555.jpg" alt="Car 1">
-          <h3>2019 Honda Civic</h3>
-          <p>$22,000</p>
-        </div>
-        <div class="car">
-          <img src=https://live.staticflickr.com/4288/34785261664_560a849e66_b.jpg" alt="Car 2">
-          <h3>2018 Toyota Camry</h3>
-          <p>$20,000</p>
-        </div>
-        <div class="car">
-          <img src="https://ourautoexpert.com/wp-content/uploads/2019/10/2020_Ford_Mustang_Shelby_GT500_3-1.jpg" alt="Car 3">
-          <h3>2020 Ford Mustang</h3>
-          <p>$35,000</p>
-        </div>
-      </section>
-      
-      <div class="db-cars" >
-        {% for car in cars %}
-          {%include 'carItems.html' %}
-        {% endfor %}
-      
-      </div>
-        
-      <div class="cartegories">
-        <section id="popular">
-          <h2>Popular Brands</h2>
-          <ul>
-              <li><a href="#">Honda</a></li>
-              <li><a href="#">Toyota</a></li>
-              <li><a href="#">Ford</a></li>
-              <li><a href="#">Chevrolet</a></li>
-              <li><a href="#">Nissan</a></li>
-              <li><a href="#">BMW</a></li>
-          </ul>
-        </section>
-          
-        <section id="popular">
-          <h2>Popular Brands</h2>
-          <ul>
-              <li><a href="#">Honda</a></li>
-              <li><a href="#">Toyota</a></li>
-              <li><a href="#">Ford</a></li>
-              <li><a href="#">Chevrolet</a></li>
-              <li><a href="#">Nissan</a></li>
-              <li><a href="#">BMW</a></li>
-          </ul>
-        </section> 
+</head>
 
-        <section id="popular">
-          <h2>Popular Brands</h2>
-          <ul>
-              <li><a href="#">Honda</a></li>
-              <li><a href="#">Toyota</a></li>
-              <li><a href="#">Ford</a></li>
-              <li><a href="#">Chevrolet</a></li>
-              <li><a href="#">Nissan</a></li>
-              <li><a href="#">BMW</a></li>
-          </ul>
-        </section> 
+<body>
 
-        <section id="popular">
-          <h2>Popular Brands</h2>
-          <ul>
-              <li><a href="#">Honda</a></li>
-              <li><a href="#">Toyota</a></li>
-              <li><a href="#">Ford</a></li>
-              <li><a href="#">Chevrolet</a></li>
-              <li><a href="#">Nissan</a></li>
-              <li><a href="#">BMW</a></li>
-          </ul>
-        </section> 
-      </div>
-      
-    </main>
-      </div>  
-    <footer>
-      <div class="footer">
-        <section class="socials">
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          <div>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-    
-        </section>
-        
-        <section class="About">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3"></i>Company name
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer content. Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Products
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Angular</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">React</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Vue</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Laravel</a>
-                </p>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Useful links
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-              </div>
+    <header class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Car Listings</a>
             </div>
-          </div>
-        </section>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2021 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>  
-    </footer>
-  </body>
-</html>
+    </header>
+    <main class="container">
 
+        <section class="row" id="search">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h2>Find Your Dream Car</h2>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Make">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Model">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Year">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Cars</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://www.carscoops.com/wp-content/uploads/2020/07/Honda-Civic-Type-R-7-1024x555.jpg" alt="Car 1">
+                        <div class="caption">
+                            <h3>2019 Honda Civic</h3>
+                            <p>$22,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://live.staticflickr.com/4288/34785261664_560a849e66_b.jpg" alt="Car 2">
+                        <div class="caption">
+                            <h3>2018 Toyota Camry</h3>
+                            <p>$20,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://ourautoexpert.com/wp-content/uploads/2019/10/2020_Ford_Mustang_Shelby_GT500_3-1.jpg" alt="Car 3">
+                        <div class="caption">
+                            <h3>2020 Ford Mustang</h3>
+                            <p>$35,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="db-cars">
+                        {% for car in cars %} {% include 'carItems.html' %} {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+                    <div class="categories">
+                        <section id="popular-brands">
+                            <h2>Popular Brands</h2>
+                            <ul>
+                                <li><a href="#">Honda</a></li>
+                                <li><a href="#">Toyota</a></li>
+                                <li><a href="#">Ford</a></li>
+                                <li><a href="#">Chevrolet</a></li>
+                                <li><a href="#">Nissan</a></li>
+                                <li><a href="#">BMW</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="popular-models">
+                            <h2>Popular Models</h2>
+                            <ul>
+                                <li><a href="#">Civic</a></li>
+                                <li><a href="#">Corolla</a></li>
+                                <li><a href="#">Mustang</a></li>
+                                <li><a href="#">Camaro</a></li>
+                                <li><a href="#">Altima</a></li>
+                                <li><a href="#">3 Series</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="featured-brands">
+                            <h2>Featured Brands</h2>
+                            <ul>
+                                <li><a href="#">Tesla</a></li>
+                                <li><a href="#">Audi</a></li>
+                                <li><a href="#">Mercedes-Benz</a></li>
+                                <li><a href="#">Jeep</a></li>
+                                <li><a href="#">Hyundai</a></li>
+                                <li><a href="#">Kia</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="featured-models">
+                            <h2>Featured Models</h2>
+                            <ul>
+                                <li><a href="#">Model S</a></li>
+                                <li><a href="#">A4</a></li>
+                                <li><a href="#">C-Class</a></li>
+                                <li><a href="#">Grand Cherokee</a></li>
+                                <li><a href="#">Sonata</a></li>
+                                <li><a href="#">Optima</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="popular-models">
+                            <h2>Popular Models</h2>
+                            <ul>
+                                <li><a href="#">Civic</a></li>
+                                <li><a href="#">Corolla</a></li>
+                                <li><a href="#">Mustang</a></li>
+                                <li><a href="#">Camaro</a></li>
+                                <li><a href="#">Altima</a></li>
+                                <li><a href="#">3 Series</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <section class="socials">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <div style=width:25px>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+
+            <section class="About">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Company name</h6>
+                            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style= width:25px>
+                            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#!" class="text-reset">Angular</a></li>
+                                <li><a href="#!" class="text-reset">React</a></li>
+                                <li><a href="#!" class="text-reset">Vue</a></li>
+                                <li><a href="#!" class="text-reset">Laravel</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#!" class="text-reset">Pricing</a></li>
+                                <li><a href="#!" class="text-reset">Settings</a></li>
+                                <li><a href="#!" class="text-reset">Orders</a></li>
+                                <li><a href="#!" class="text-reset">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4" style= width:25px>Contact</h6>
+                            <p><i class="fas fa-home me-3" style=width:25px></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope me-3" style= width:25px></i> info@example.com</p>
+                            <p><i class="fas fa-phone me-3" style= width:25px></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3" style= width:25px></i> + 01 234 567 89</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05); ">© 2021 Copyright:
+                <a class="text-reset fw-bold " href="https://mdbootstrap.com/ ">MDBootstrap.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
