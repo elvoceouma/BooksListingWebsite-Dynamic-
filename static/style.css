@@ -3,6 +3,12 @@ body {
 	margin: 0;
 	padding: 0;
 }
+html, body {
+    margin: 0;
+    height: 100%;
+
+  
+}
 
 header {
 	background-color: #333;
@@ -102,7 +108,7 @@ a {
 }
 .cartegories{
     display: inline-flex;
-    padding: 200px;
+    padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -110,10 +116,14 @@ a {
 }
 #popular{
     align-items: center;
-    position:relative;
     justify-content: center;
     margin-right: 50px;
     padding: auto;
+  
+}
+.db-cars{
+    border-bottom: 5px;
+    border-color: #333;
 }
 footer {
     background-color: #333;
